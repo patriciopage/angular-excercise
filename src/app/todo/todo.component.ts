@@ -33,6 +33,8 @@ export class TodoComponent implements OnInit {
   }
   */
 
+  sortByPriority() {}
+
   filterByPriority() {
     this.tempTodo = this.todos.slice();
     this.todos = this.todos.filter(
