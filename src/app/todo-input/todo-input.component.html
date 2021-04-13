@@ -1,0 +1,19 @@
+<div>
+  <input
+    placeholder="description"
+    name="description"
+    id="description"
+    type="text"
+    (keydown.enter)="addTodo()"
+    [(ngModel)]="description"
+  />
+  <input
+    placeholder="priority"
+    name="priority"
+    id="priority"
+    type="number"
+    (keydown.enter)="addTodo()"
+    [(ngModel)]="priority"
+  />
+  <input id="submit" type="button" (click)="addTodo()" value="Add Todo" />
+</div>

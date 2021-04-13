@@ -1,0 +1,19 @@
+<section class="main-section">
+  <h2>TODO APP</h2>
+  <section id="input">
+    <todo-input (itemInput)="addTodo($event)"></todo-input>
+  </section>
+  <section id="list">
+    <todo-item
+      *ngFor="let todo of todos"
+      [todo]="todo"
+      (deleteItem)="deleteItemFromList($event)"
+    ></todo-item>
+  </section>
+  <section *ngIf="todos.length > 0" id="filter">
+    <input type="number" placeholder="priority" [(ngModel)]="priorityFilter" />
+    <input type="button" value="Filter" (click)="filterByPriority($event)" />
+    <input type="button" value="Clear" (click)="clearFilter()" />
+  </section>
+  <ng-content select="app-footer"></ng-content>
+</section>

@@ -1,0 +1,17 @@
+.todo-item {
+  padding: 0.3em;
+}
+/* remove for interview: "align buttons to the right"*/
+.todo-item button {
+  float: right;
+}
+
+#description {
+  display: inline-block;
+  margin-right: 5em;
+}
+
+#priority {
+  display: inline-block;
+  margin-right: 1em;
+}

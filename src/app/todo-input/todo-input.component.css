@@ -1,0 +1,17 @@
+input {
+  float: left;
+  padding: 0.2em;
+  margin: 0.1em;
+}
+
+input#description {
+  width: 50%;
+}
+
+input#priority {
+  width: 20%;
+}
+
+input#submit {
+  width: 20%;
+}
